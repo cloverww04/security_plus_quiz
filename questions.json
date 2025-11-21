@@ -15,7 +15,7 @@
   {
     "id": 2,
     "domain": "1.0 - Mastering Security Basics",
-    "question": "Moe manages network devices in his store and maintains copies of the configuration files for all the managed routers and siwtches. On a weekly basis, he creates hases for these files and compares them with hases he created on the same files the previous week. Which of the following use cases is he MOST likely supporting?",
+    "question": "Moe manages network devices in his store and maintains copies of the configuration files for all the managed routers and siwtches. On a weekly basis, he creates hashes for these files and compares them with hashes he created on the same files the previous week. Which of the following use cases is he MOST likely supporting?",
     "options": [
       "Supporting confidentiality",
       "Supporting integrity",
@@ -218,7 +218,7 @@
   {
     "id": 18,
     "domain": "2.0 - Understanding Identity and Access Managment",
-    "question": "Mangement with your organization wants to add 2FA security for users working from home. Additionally, management wants to ensure that 2FA passwrods expire after 30 seconds. Which of the following choices BEST meets this requirement?",
+    "question": "Mangement with your organization wants to add 2FA security for users working from home. Additionally, management wants to ensure that 2FA passwords expire after 30 seconds. Which of the following choices BEST meets this requirement?",
     "options": [
       "HOTP",
       "TOTP",
@@ -244,7 +244,7 @@
   {
     "id": 20,
     "domain": "2.0 - Understanding Identity and Access Managment",
-    "question": "The Marvin Monroe Memorial Hostpital was recently sued after removing a kidney from the wrong patient. Hospital executives went to implement a method that will reduce medical errors related to misidentifying patients. They want to ensure medical personnel can identify a petient even if the patient is unconscious. Which of the following would be the BEST solution?",
+    "question": "The Marvin Monroe Memorial Hostpital was recently sued after removing a kidney from the wrong patient. Hospital executives went to implement a method that will reduce medical errors related to misidentifying patients. They want to ensure medical personnel can identify a patient even if the patient is unconscious. Which of the following would be the BEST solution?",
     "options": [
       "Gait analysis",
       "Vein scans",
