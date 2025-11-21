@@ -1,0 +1,213 @@
+[
+  {
+    "id": 1,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Management within your organization has defined a use case to support the confidentiality of data stored in a database. Which of the following solutions will BEST meet this need?",
+    "options": [
+      "Hashing",
+      "Disk redundancies",
+      "Encryption",
+      "Patching"
+    ],
+    "correct": "Encryption",
+    "explanation": "Encyption is the best choice to provide confidentiality for any type of data, including data stored in a database."
+  },
+  {
+    "id": 2,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Moe manages network devices in his store and maintains copies of the configuration files for all the managed routers and siwtches. On a weekly basis, he creates hases for these files and compares them with hases he created on the same files the previous week. Which of the following use cases is he MOST likely supporting?",
+    "options": [
+      "Supporting confidentiality",
+      "Supporting integrity",
+      "Supporting encryption",
+      "Supporting availability"
+    ],
+    "correct": "Supporting integrity",
+    "explanation": "He is most likely using a use case of supporting integrity. By verifying that the hashes of the configuration files have not changed, he can ensure that the files have not been altered or tampered with."
+  },
+  {
+    "id": 3,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Which of the following is a cryptographic algorithm that will create a fixed-length output from a data file but cannot be used to re-create the original data file?",
+    "options": [
+      "MD5",
+      "AES",
+      "IDS",
+      "SIEM"
+    ],
+    "correct": "MD5",
+    "explanation": "Message Digest 5 (MD5) is a hashing algorithm that creates a fixed-length IRREVERSIBLE output. Hashing algorithms cannot re-create the original data file from just the hash. AES you can re-create the original data file by decrypting it"
+  },
+  {
+    "id": 4,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Your organization hosts an e-commerce web server selling digital products. The server randomly experiences a high volume of sales and usage, which causes spikes in resource usage. These spikes occasionally take the server down. Which of the following would be the BEST way to prevent these outages?",
+    "options": [
+      "Elasticity",
+      "Scalability",
+      "Normalization",
+      "Stored procedures"
+    ],
+    "correct": "Elasticity",
+    "explanation": "Elasticity is the best choice because it allows the server to dynamically scale as needed in response to changes in demand."
+  },
+  {
+    "id": 5,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "An administrator recently installed an IDS to help reduce the imapct of security incidents. Which of the following BEST identifies the control type of an IDS?",
+    "options": [
+      "Preventive",
+      "Physical",
+      "Deterrent",
+      "Detective"
+    ],
+    "correct": "Detective",
+    "explanation": "An intrusion detection system (IDS) is a detective control. It can detect malicious traffic after it enters a network but cannot prevent it from entering."
+  },
+  {
+    "id": 6,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Maggie works in the security section of the IT department. Her primary responsibilites are to monitor security logs, analyze trends reported by the SIEM, and validate alerts. Which of the following choices BEST identifies the primary security control she's implemnting?",
+    "options": [
+      "Compensating Control",
+      "Preventive control",
+      "Detective control",
+      "Corrective control"
+    ],
+    "correct": "Detective control",
+    "explanation": "Monitoring security logs, analyzing trend reports from a security information and event management (SIEM), and validating alerts from a SIEM are detective controls. Detective controls try to detect security incidents after they happened."
+  },
+  {
+    "id": 7,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "A server in your network's DMZ was recently attacked. The firewall logs show that the server was attacked from many different external IP addresses. It received an overwhelming number of requests from those addresses that caused the website hosted on the server to fail. What security goal was most directly affected by this attack?",
+    "options": [
+      "Integrity",
+      "Non-repudiation",
+      "Confidentiality",
+      "Availability"
+    ],
+    "correct": "Availability",
+    "explanation": "This attack disrupted the ability of legitimate users to access the website hosted on the server, which is an attack against the availability of that website."
+  },
+  {
+    "id": 8,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "You are in the process of logging into a service hosted by your organization. You entered your username and now you are being asked to complete a fingerprint scan. What element of access control is taking place when you scan your fingerprint?",
+    "options": [
+      "Authentication",
+      "Authorization",
+      "Availability",
+      "Identification"
+    ],
+    "correct": "Authentication",
+    "explanation": "The three streps of the access control process are identification, authentication, and authorization. You already completed the identification step by entering your username. The fingerprint scan is the authentication step, which verifies that you are who you say you are."
+  },
+  {
+    "id": 9,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Which one of the following technologies is generally NOT considered a fault tolerance or redundancy control?",
+    "options": [
+      "UPS",
+      "SIEM",
+      "RAID",
+      "Identification"
+    ],
+    "correct": "SIEM",
+    "explanation": "A security information and event mangement (SIEM) system is designed to improve the organization's ability to monitor and manage security issues. It does not generally provide redudancy or fault tolerance."
+  },
+  {
+    "id": 10,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Kate's manager asked her to organize a new process for conducting periodic vulnerability assessments of her organization's infrastructure. She is working to create a standard operating procedure for this scanning. What category BEST describes the control she is creating?",
+    "options": [
+      "Technical",
+      "Detective",
+      "Physical",
+      "Managerial"
+    ],
+    "correct": "Managerial",
+    "explanation": "The focus on policy and procedure and lack of mentioning technology causes the BEST possible solution to be Managerial."
+  },
+  {
+    "id": 11,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Lisa is logging into a system and, before typing her username and password, sees the message: This is a U.S. Government computer system, which may be accessed and used only for authorized Government business by authorized personnel. Unauthorized access or use of this computer system may subject violators to criminal, civil, and/or administrative action. What type of control is Lisa experncing?",
+    "options": [
+      "Detective",
+      "Compensating",
+      "Deterrent",
+      "Corrective"
+    ],
+    "correct": "Deterrent",
+    "explanation": "The purpose of a warning banner such as the one shown in this question is to make an intruder less likely to attempt an attack. That is the goal of a deterrent control."
+  },
+  {
+    "id": 12,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "You are investigating an active security incident and you want to view the contents of network traffic that passed between two systems. What data source would BEST provide this information?",
+    "options": [
+      "Operating system log",
+      "Application log",
+      "Firewall log",
+      "Packet capture"
+    ],
+    "correct": "Packet capture",
+    "explanation": "Investigators looking into an active security incident may use a packet capture tool like Wireshark to capture network traffic related to the incident that they can later examine in careful detail to reconstruct what happened. Firewall logs may contain records of the systemss that communicated with each other, but they would not normally contain the content of that communication"
+  },
+  {
+    "id": 13,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Moe is overwhelmed by the number of log records generated by the many different security systems in his organization and would like to use a technology that aggregates those records in a single location and correlates them. What technology would best meet his needs?",
+    "options": [
+      "Syslog",
+      "SIEM",
+      "IPS",
+      "Firewall"
+    ],
+    "correct": "SIEM",
+    "explanation": "A security information and event managment (SIEM) solution is designed to aggregate and correlate log entries."
+  },
+  {
+    "id": 14,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Maggie is reviewing log entries from many different systems and notices that the clocks on those systems are not synchronized, making it difficult to correlate the log entries. What protocol can she use to synchronize the system clocks?",
+    "options": [
+      "NTP",
+      "FTP",
+      "SFTP",
+      "HTTPS"
+    ],
+    "correct": "NTP",
+    "explanation": "The network time protocol (NTP) is used to synchronize system clocks with a centralized time source."
+  },
+  {
+    "id": 15,
+    "domain": "1.0 - Mastering Security Basics",
+    "question": "Which of the following describes the proper format of log entries for Linux systems?",
+    "options": [
+      "Event Viewer",
+      "logger",
+      "SIEM",
+      "Syslog"
+    ],
+    "correct": "Syslog",
+    "explanation": "The syslog protocol (defined in RFC 5424) identifies the format of Linux log entries and descirbes how to transpfor these log entries."
+  },
+  {
+    "id": 16,
+    "domain": "2.0 - Understanding Identity and Access Managment",
+    "question": "Which model is used to describe network communication layers?",
+    "options": ["OSI Model", "TCP/IP Model", "Both", "Neither"],
+    "correct": "Both A and B",
+    "explanation": "The OSI model and TCP/IP model are both used to conceptualize network communication layers; OSI has 7 layers while TCP/IP typically has 4."
+  },
+  {
+    "id": 31,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "What port does HTTPS use by default?",
+    "options": ["80", "22", "443", "3389"],
+    "correct": "443",
+    "explanation": "HTTPS uses TCP port 443 by default for encrypted web traffic."
+  }
+]

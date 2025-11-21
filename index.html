@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security+ Quiz — Dark Mode</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <h2>Security+ Practice</h2>
+        <div class="filters">
+          <label>Domains</label>
+          <div id="domain-list"></div>
+          <button id="select-all">Select All</button>
+          <button id="clear-all">Clear</button>
+        </div>
+
+        <div class="controls">
+          <label for="num-questions">Questions:</label>
+          <input
+            id="num-questions"
+            type="number"
+            min="1"
+            max="200"
+            value="20"
+          />
+
+          <label for="shuffle">Shuffle:</label>
+          <input id="shuffle" type="checkbox" checked />
+
+          <button id="start-btn" class="primary">Start Quiz</button>
+          <button id="reset-progress">Reset Progress</button>
+        </div>
+
+        <div class="footer">
+          <small>Dark Mode — Cyber Theme</small>
+        </div>
+      </aside>
+
+      <main id="main">
+        <header>
+          <div class="title">Security+ SY0-701 — Practice</div>
+          <div id="score">Score: 0</div>
+        </header>
+
+        <section id="quiz-area">
+          <div id="progress-container">
+            <div id="progress-bar"><div id="progress-fill"></div></div>
+            <div id="progress-text">0 / 0</div>
+          </div>
+
+          <div id="question-card" class="card hidden">
+            <div id="question-meta" class="meta"></div>
+            <div id="question-text" class="question"></div>
+            <div id="options" class="options"></div>
+
+            <div class="actions">
+              <button id="next-btn" class="primary">Next</button>
+              <button id="show-explanation" class="muted">
+                Show Explanation
+              </button>
+            </div>
+
+            <div id="explanation" class="explanation hidden"></div>
+          </div>
+
+          <div id="start-panel" class="panel">
+            <h3>Ready to start?</h3>
+            <p>
+              Choose domains and how many questions you want, then click
+              <strong>Start Quiz</strong>.
+            </p>
+          </div>
+
+          <div id="end-panel" class="panel hidden">
+            <h3>Quiz Complete</h3>
+            <p id="final-score"></p>
+            <button id="retry-btn" class="primary">Retry</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script>
+        window.onload = init;
+    </script>
+  </body>
+</html>
+
+
