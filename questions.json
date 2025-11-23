@@ -198,8 +198,8 @@
     "id": 16,
     "domain": "2.0 - Understanding Identity and Access Managment",
     "question": "Your organization wants to identify biometric methods used for identification. The requirements are... Collect the data passively, Bypass a formal enrollment process, and Avoid obvious methods and let the subject know data is being collected... Which of the following biometric methods BEST meet these requirements? (Select TWO).",
-    "options": ["Fingerprint", "Retina", "Iris", "Facial", "Palm Vein", "Gait analysis"],
-    "correct": ["Facial", "Gait analysis"],
+    "options": ["Fingerprint", "Retina", "Facial and Gait analysis", "Facial", "Palm Vein", "Gait analysis"],
+    "correct": ["Facial and Gait analysis"],
     "explanation": "It's possible to collect facial scan data and perform gait analysis without an enrollment process. You would use cameras to observe subjects from a distance and collect the data passively."
   },
   {
@@ -231,7 +231,7 @@
   {
     "id": 19,
     "domain": "2.0 - Understanding Identity and Access Managment",
-    "question": "Management within your organization has decided to implement a biometric solution for authentication into the data center. They have started that the biometric system needs to be highly accurate. Which of the following provides the BEST indication of accuracy with a biometric system?",
+    "question": "Management within your organization has decided to implement a biometric solution for authentication into the data center. They have stated that the biometric system needs to be highly accurate. Which of the following provides the BEST indication of accuracy with a biometric system?",
     "options": [
       "The lowest possible FRR",
       "The highest possible FAR",
@@ -244,7 +244,7 @@
   {
     "id": 20,
     "domain": "2.0 - Understanding Identity and Access Managment",
-    "question": "The Marvin Monroe Memorial Hostpital was recently sued after removing a kidney from the wrong patient. Hospital executives went to implement a method that will reduce medical errors related to misidentifying patients. They want to ensure medical personnel can identify a patient even if the patient is unconscious. Which of the following would be the BEST solution?",
+    "question": "The Marvin Monroe Memorial Hostpital was recently sued after removing a kidney from the wrong patient. Hospital executives want to implement a method that will reduce medical errors related to misidentifying patients. They want to ensure medical personnel can identify a patient even if the patient is unconscious. Which of the following would be the BEST solution?",
     "options": [
       "Gait analysis",
       "Vein scans",
@@ -257,7 +257,7 @@
   {
     "id": 21,
     "domain": "2.0 - Understanding Identity and Access Managment",
-    "question": "Users regularly log on with a username and password. However, managment wants to add a second authentication factor for any users who launch the gcga application. The method needs to be user-friendly and non-diruptive. Which of the following will BEST meet these requirements?",
+    "question": "Users regularly log on with a username and password. However, managment wants to add a second authentication factor for any users who launch the gcga application. The method needs to be user-friendly and non-disruptive. Which of the following will BEST meet these requirements?",
     "options": [
       "An authentication application",
       "TPM",
@@ -392,5 +392,186 @@
     "options": ["The newest fully supported version of SSL", "The newest fully supported version of TLS", "The newest fully supported version of LDAPS", "The newest fully supported version of SNMP"],
     "correct": "The newest fully supported version of TLS",
     "explanation": "The newest version of Transport Layer Security (TLS) should be implemented to access the network devices."
+  },
+  {
+    "id": 32,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Your organization's security policy requires that confidential data transferred over the internal network must be encrypted. Which of the following protocols would BEST meet this requirement?",
+    "options": [
+      "FTP",
+      "SSH", 
+      "SNMPV3", 
+      "SRTP"],
+    "correct": "SSH",
+    "explanation": "You can use Secure Shell (SSH) to encrypt confidential data when transmitting it over the network."
+  },
+  {
+    "id": 33,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Maggie needs to collect network device configuration information and network statistics from devices on the network. She wants to protect the confidentiality of credentials used to connect to these devices. Which of the follow protocols would BEST meet this need?",
+    "options": [
+      "SSH",
+      "FTP", 
+      "SNMPV3", 
+      "TLS"],
+    "correct": "SNMPV3",
+    "explanation": "Simple Network Management Protocol version 3 (SNMPv3) is a secure protocol that can monitor and collect information from network devices. It includes strong authentication mechanisms to protect the confidentiality of credentials."
+  },
+  {
+    "id": 34,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Which one of the following components would not be able to communicate on the data plane of a zero trust network?",
+    "options": [
+      "subject",
+      "Enterprise resource", 
+      "Policy enforcement point", 
+      "Policy administrator"],
+    "correct": "Policy administrator",
+    "explanation": "The Policy Adminstrator (PA) exists entirely on the control plane. It sends decisions to the Policy Enforcement Point (PEP), wich is able to communicate on both the control plane and the data plane."
+  },
+  {
+    "id": 35,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "You are configuring a web server that will contain information about your organization and receive orders from your customers. which one of the following network locations is the best placement for this server?",
+    "options": [
+      "Screen subnet",
+      "Intranet", 
+      "Extranet", 
+      "Internet"],
+    "correct": "Screen subnet",
+    "explanation": "Systems that must be accessed by the general public should always be placed on the screen subnet. This network is designed to house systems that require public access but still must be secured."
+  },
+  {
+    "id": 36,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Maggie is examining traffic on a network searching for signs of insecure protocol use. She sees communications taking place on several different network ports. Which one of these ports most likely contains insecure traffic?",
+    "options": [
+      "22",
+      "80", 
+      "443", 
+      "587"],
+    "correct": "80",
+    "explanation": "Port 80 is used by the unecrypted Hypertext Transfer Protocol (HTTP)."
+  },
+  {
+    "id": 37,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "You are tasked with enabling NTP on some servers within your organization's screened subnet. Which of the following use cases are you MOST likely supporting with this action?",
+    "options": [
+      "Encryping voice and video transmissions",
+      "Providing time synchronization", 
+      "Enabling email usage", 
+      "Encrypting data in transit"],
+    "correct": "Providing time synchronization",
+    "explanation": "The Network Time Protocol (NTP) provides time synchronization services, so enabling NTP on servers in the screen sunet would meet this use case."
+  },
+  {
+    "id": 38,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Your organization has several switches in use throughout the internal network. Management wants to implement a security control to prevent unatuhorized access to these switches within the network. Which of the following choices would BEST meet this need?",
+    "options": [
+      "Disable unused ports",
+      "Disable STP", 
+      "Enable SSH", 
+      "Enable DHCP"],
+    "correct": "Disable unused ports",
+    "explanation": "You can prevent unathorized access by disabling unused physical ports on the switches as an overall port security practice. This prevents the connection if someone plugs their computer into an unused disabled port."
+  },
+  {
+    "id": 39,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Network administrators manage network devices remotely. However, a recent security audit discovered they are using a protocol that allows them to send credentials over the network in cleartext. Which of the following is the best method to be adopted to eliminate this vulnerability?",
+    "options": [
+      "Use SNMPv2c",
+      "Use SSH", 
+      "Use SSL", 
+      "Use SFTP"],
+    "correct": "Use SSH",
+    "explanation": "Secure Shell (SSH) can be used to connect to many network devices and is the best answer for the given choices."
+  },
+  {
+    "id": 40,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Which of the following devices would MOST likely have the following entries used to define its operation? 1. Permit IP any any eq 80 2. Permit IP any any eq 443 3. Deny IP any any",
+    "options": [
+      "Firewall",
+      "Proxy server", 
+      "Web server", 
+      "Jump server"],
+    "correct": "Firewall",
+    "explanation": "These are rules in an access control list (ACL) with a firewall."
+  },
+  {
+    "id": 41,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Firewall rule question?",
+    "options": [
+      "HTTPS Outbound",
+      "HTTP Outbound", 
+      "DNS", 
+      "Telnet"],
+    "correct": "HTTP Outbound",
+    "explanation": "The Hypertext Transfer Protocol (HTTP) rule should be changed from Allow to Block to block cleartext web traffic."
+  },
+  {
+    "id": 42,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "The Springfield Nuclear Power Plant has several stand-alone computers used for monitoring. Employees log on to these computers using a local account to verify proper operation of various processes. The CIO of the organization has mandated that these computers cannot be connected to the organization's network or have access to the internet. Which of the following would BEST meet this requirement?",
+    "options": [
+      "Air gap the computers",
+      "Place the computers in a screened subnet", 
+      "Create a separate isolated network for these comptuers", 
+      "Place the computers within a VLAN"],
+    "correct": "Air gap the computers",
+    "explanation": "An air gap provides physical isolation, indicating that there is a gap of air between an isolated system and other systems."
+  },
+  {
+    "id": 43,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "You have added another router in your network. This router provides a path to a limited access network that isn't advertised. However, a network administrator needs to access this network regularly. Which of the following could he do to configure his computer to access this limited network?",
+    "options": [
+      "Implement QoS technolgies",
+      "Add a VLAN", 
+      "Use the route command", 
+      "Open additional ports on the router"],
+    "correct": "Use the route command",
+    "explanation": "The route command can be used to display and manipulate the routing table on a Linux computer. Using this, you can provide another gateway path through this router to the limited access network."
+  },
+  {
+    "id": 44,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Several severs in your organization's screened subnet were recently attacked. After analyzing the logs, you discover that many of these attacks used TCP, but the packets were not part of an established TCP session. Which of the following devices would provide the BEST solution to prevent these attacks in the future?",
+    "options": [
+      "Stateless firewall",
+      "Stateful firewall", 
+      "Network firewall", 
+      "Web application firewall"],
+    "correct": "Stateful firewall",
+    "explanation": "A stateful firewall filters traffic based on the state of the packet within a session. It would filter a packet that isn't part of an established Tansmission Control Protocol (TCP) session, which starts with a TCP three-way hand shake."
+  },
+  {
+    "id": 45,
+    "domain": "3.0 - Exploring Network Tecchnologies and Tools",
+    "question": "Your network currently has a dedicated firewall protecting access to a web server. It is currently configured with only the following two rules in the ACL: PERMIT TCP ANY ANY 443 and PERMIT TCP ANY ANY 80. You have detected DNS requests and DNS zone transfer requests coming through the fire-wall and you need to block them. Which of the following would meet this goal?",
+    "options": [
+      "Add the following rule to the firewall: DENY UDP ALL ALL 53",
+      "Add the following rule to the firewall: DENY TCP ALL ALL 53", 
+      "Add the following rule to the firewall: DENY IP ALL ALL 53", 
+      "Add an implicit deny rule at the end of the ACL",
+      "Both DENY UDP ALL ALL 53 and implicit deny rule at the end of the ACL"],
+    "correct": "Both DENY UDP ALL ALL 53 and implicit deny rule at the end of the ACL",
+    "explanation": "The easiest way is to add an implicit deny rule at the end of the access control list (ACL) and all firewalls should have this to black all unwanted traffic. You can also deny all IP traffic using port 53 with DENY IP ALL ALL 53."
+  },
+  {
+    "id": 46,
+    "domain": "4.0 - Securing Your Network",
+    "question": "A HIDS reported a vulnerability on a system based on a known attack. After researching the alert from the HIDS, you identify the recommended soltuon and begin applying it. What type of HIDS is in use?",
+    "options": [
+      "Network-based",
+      "Signature-based", 
+      "Heuristic-based", 
+      "Anomaly-based"],
+    "correct": "Signature-based",
+    "explanation": "If the host-based intrustion detection system (HIDS) identified a known issue, it is using signature-based detection (sometimes called definition-based detection)."
   }
 ]
