@@ -573,5 +573,173 @@
       "Anomaly-based"],
     "correct": "Signature-based",
     "explanation": "If the host-based intrustion detection system (HIDS) identified a known issue, it is using signature-based detection (sometimes called definition-based detection)."
+  },
+  {
+    "id": 47,
+    "domain": "4.0 - Securing Your Network",
+    "question": "You are preparing to deploy a trend-based detection system to monitor network activty. Which of the following would you create first?",
+    "options": [
+      "BPDU guard",
+      "Signature", 
+      "Baseline", 
+      "Honeypot"],
+    "correct": "Baseline",
+    "explanation": "A trend-based (also called behavior-based or anomaly-based) detection system compares current activity with a previously created baseline to detect any anomalies or changes."
+  },
+  {
+    "id": 48,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Lenny noticed a significant number of logon failures for administrator accounts on the organization's public website. After investigating it further, he notices that most of these attempts are from IP addresses assigned to foreign countries. He wants to implement a solution that will detect and prevent similar attacks. Which of the following is the BEST choice?",
+    "options": [
+      "implement a passive NIDS",
+      "Block all traffic from foreign countries", 
+      "Implement an in-line NIPS", 
+      "Disable the administrator accounts"],
+    "correct": "Implement an in-line NIPS",
+    "explanation": "An inline network-based intrusion prevention system (NIPS) can dynamically detect, react to, and prevent attacks."
+  },
+  {
+    "id": 49,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Lisa created a document called password.txt and put the username of two accounts with elevated privileges. She then placed the file on her administrator account desktop on several servers. Which of th efollowing BEST explains her actions?",
+    "options": [
+      "She can use thire file to retrieve the passwords if she forgets them",
+      "The file will divert attackers from the live network", 
+      "This document is a honeyfile", 
+      "The file is needed by an application to run when the system syarts"],
+    "correct": "This document is a honeyfile",
+    "explanation": "A honeyfile is a file with a deceptive name (such as password.txt) that is designed to attract attackers. When an attacker opens the file, it can trigger an alert to the security team."
+  },
+  {
+    "id": 50,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Your organization is planning to upgrade the wireless network used by employees. It will provide encrypted authentication of wireless users over TLS. Which of the following protocols are they MOST likely implementing?",
+    "options": [
+      "EAP",
+      "PEAP", 
+      "WPA2", 
+      "WPA3"],
+    "correct": "PEAP",
+    "explanation": "Protected EAP (PEAP) can be used for wireless authentication and it uses Transport Layer Security (TLS) to encapsulate and encrypt the authentication conversation within a TLS tunnel."
+  },
+  {
+    "id": 51,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Lisa is creating a detailed diagram of wireless access points and hotspots within your organization. What is another name for this?",
+    "options": [
+      "Remote access VPN",
+      "Wireless footprinting", 
+      "Channel overlap map", 
+      "Architectural diagram"],
+    "correct": "Wireless footprinting",
+    "explanation": "Wireless footprinting creates a detailed diagram of wireless access points and hotposts within an organization."
+  },
+  {
+    "id": 52,
+    "domain": "4.0 - Securing Your Network",
+    "question": "You are assisting a small business owner in setting up a public wireless hotspot for her customers. She wants to allow customers to access the hotspot without entering a password. Which of the following is MOST appropriate for this hotspot?",
+    "options": [
+      "Use Open mode",
+      "Use a PSK", 
+      "Use Enterprise mode", 
+      "Disable SSID broadcast"],
+    "correct": "Use Open mode",
+    "explanation": "Open mode is the best choice of those given for a public wireless hotspot that doesn't require a password."
+  },
+  {
+    "id": 53,
+    "domain": "4.0 - Securing Your Network",
+    "question": "A network administrator routinely tests the network looking for vulnerabilities. He recently discovered a new access point set to open. After connecting to it, he found he was able to access network resources. What is the BEST explanation for this device?",
+    "options": [
+      "Evil twin",
+      "A Raspberry PI device", 
+      "Rogue AP", 
+      "APT"],
+    "correct": "Rogue AP",
+    "explanation": "This describes a rogue access point (AP). A rouge AP is not authorized (also known as shadow IT) but provides acces to an internal network because it has been plugged into the network."
+  },
+  {
+    "id": 54,
+    "domain": "4.0 - Securing Your Network",
+    "question": "You are an administrator at a small organization. Homer contacted you today and reported the following: 1. He logged on normally on Monday morning and accessed network shares. 2. Later when he tried access the internet a pop-up window with the organization's wireless SSID prompted him to log on. 3. After doing so he could access the internet but no longer had access to the network shares. 4. Three days later, his bank notified him of suspicious activity on his account.  Which of the following indicates the MOST likely explanation for this activity?",
+    "options": [
+      "An evil twin",
+      "A rogue access point", 
+      "A DDos attack", 
+      "A captive portal"],
+    "correct": "An evil twin",
+    "explanation": "This describes an evil twin. Normally, a user shouldn't have to log on again to access the internet. Because he lost access to network resources after logging on, it idicates he didn't log on to a corporate access point but instead logged on to an unauthorized AP."
+  },
+  {
+    "id": 55,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Mobile users in your network report that they frequently lost connectivity with the wireless network on some days, but they don't have any problems on other days. You suspect this is due to an attack. Which of the following attacks is MOST likely to cause these symptoms?",
+    "options": [
+      "Wireless jamming attack",
+      "IV attack", 
+      "Replay attack", 
+      "Bluesnarfing attack"],
+    "correct": "Wireless jamming attack",
+    "explanation": "A wireless jamming attack is a tpye of denial-of-service (DoS) attack that can cause wireless devices to lose their association with access points and disconnect them from the network."
+  },
+  {
+    "id": 56,
+    "domain": "4.0 - Securing Your Network",
+    "question": "An attack can access email contact lists on your smartphone. What type of attack is this?",
+    "options": [
+      "Bluesnarfing",
+      "Bluejacking", 
+      "Captive portal", 
+      "WPS"],
+    "correct": "Bluesnarfing",
+    "explanation": "A successful bluesnarfing attack allows attackers to access data (including email contact lists) on a smartphone."
+  },
+  {
+    "id": 57,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Your organization plans to implement a connection between the main site and a remote office giving remote employees on-demand access to resources at headquarters.  The chief information office (CIO) wants to use the internet for this connection. Which of the following solutions will BEST support this requirement?",
+    "options": [
+      "Remote access VPN",
+      "Site-to-site VPN", 
+      "Full tunnel VPN", 
+      "Split tunnel VPN"],
+    "correct": "Site-to-site VPN",
+    "explanation": "A site-to-site VPN includes two VPN servers that act as gateways for two networks separated geographically, such as a main site and a remote office. Remote access VPN is used to connect to a main office network for employees working from home not a remote office from the main network."
+  },
+  {
+    "id": 58,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Your organization is allowing more employees to work from home, and they want to upgrade their VPN. Management wants to ensure that after a VPN client connects to the VPN server, all trafic from the VPN client is encrypted. Which of the following would BEST meet this goal?",
+    "options": [
+      "Split tunnel",
+      "Full tunnel", 
+      "IPsec using Tunnel mode", 
+      "IPsec using Transport mode"],
+    "correct": "Full tunnel",
+    "explanation": "A full tunnel encrypts all traffic after a user has connected to a virtual private network using a tunnel."
+  },
+  {
+    "id": 59,
+    "domain": "4.0 - Securing Your Network",
+    "question": "An organization is hosting a VPN that employees are using while working from home. Mangement wants to ensure that all VPN clients are using up-to-date operating systems and antivirus software, Which of the following would BEST meet this need?",
+    "options": [
+      "NAT",
+      "NAC", 
+      "VLAN", 
+      "Screened subnet"],
+    "correct": "NAC",
+    "explanation": "Network access control (NAC) technologies can inspect virtual private network clients for heatlh status, including having up-to-date operating systems and antivirus software."
+  },
+  {
+    "id": 60,
+    "domain": "4.0 - Securing Your Network",
+    "question": "Your organization recently implemented a BYOD policy. However, management wants to ensure that mobile devices meet minimum standards for security before they can access any network resources. Which of the following would the NAC MOST likely use?",
+    "options": [
+      "Permanent",
+      "Health", 
+      "RADIUS", 
+      "Agentless"],
+    "correct": "Agentless",
+    "explanation": "An agentless network access control system is often used on employee-owned devices and would be appropriate if an organization implemented a bring your own device policy."
   }
 ]
